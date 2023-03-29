@@ -1,6 +1,9 @@
 ﻿using Modele;
 
 using System;
+using System.IO;
+
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Electrocasnice
 {
@@ -13,6 +16,8 @@ namespace Electrocasnice
             Persoana c = new Persoana(3255346,"Mihai","Apopei");
             Console.WriteLine("Nume " + c.Nume + " cnp " + c.Cnp);
             ManageriereFisier.SalvareinFisier(c.cnp, c.Nume, c.Prenume, p.Cod, p.NumeP, p.NumePiesaSchimb, p.PretPiesa, p.PretTotal);
+            
+            Console.ReadKey();
         }
     }
 }

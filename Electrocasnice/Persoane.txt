@@ -1,0 +1,8 @@
+CNP: 3255346
+Nume: Mihai
+Prenume: Apopei
+Cod: 123
+Nume produs: Aspirator
+Nume piesa de schimb: Roti
+Pret piesa schimb: 27
+Pret total: 169

@@ -10,7 +10,7 @@ namespace Modele
 
         public static void SalvareinFisier(int cnp, string nume, string prenume,int cod, string numeP, string numePiesaSchimb, int pretPiesa, int pretTotal)
         {
-            using (StreamWriter writer = new StreamWriter("Persoane.txt"))
+            using (StreamWriter writer = new StreamWriter( Directory.GetParent(Directory.GetCurrentDirectory("Persoane.txt")).Parent.FullName))
             {
                 writer.Write("CNP: ");
                 writer.WriteLine(cnp);
